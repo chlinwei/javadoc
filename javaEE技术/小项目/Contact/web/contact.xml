@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contact-list> 
+  <contact id="d12d2230-02a0-4c77-a3e9-45d5d6ac0374"> 
+    <name>lw</name>  
+    <gender>女</gender>  
+    <phone>23324242</phone>  
+    <email>3432432@qq.com</email>  
+    <address>湖北</address> 
+  </contact>  
+  <contact id="aa3711a8-19e6-412c-a895-9efce749e9c1"> 
+    <name>hahah</name>  
+    <gender>男</gender>  
+    <phone>2432432423</phone>  
+    <email>3423432@qq.com</email>  
+    <address>湖北潜江</address> 
+  </contact>  
+  <contact id="1802459d-68aa-4128-8d1a-8497cde88880">
+    <name>hahah</name>
+    <gender>男</gender>
+    <phone>2432432423</phone>
+    <email>3423432@qq.com</email>
+    <address>湖北潜江</address>
+  </contact>
+</contact-list>

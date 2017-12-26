@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Contact:war exploded">
+    <output-path>$PROJECT_DIR$/../共享目录/server/apache-tomcat-8.5.23/apache-tomcat-8.5.23/webapps/web</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Contact/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Contact" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
