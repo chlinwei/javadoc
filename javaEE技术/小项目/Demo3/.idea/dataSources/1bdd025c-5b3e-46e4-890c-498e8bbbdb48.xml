@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@47.96.27.61">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="test1"/>
+    <table id="7" parent="2" name="account"/>
+    <table id="8" parent="2" name="admin"/>
+    <table id="9" parent="2" name="dept"/>
+    <table id="10" parent="2" name="emp_log"/>
+    <table id="11" parent="2" name="employee"/>
+    <table id="12" parent="2" name="file_list"/>
+    <table id="13" parent="2" name="news"/>
+    <table id="14" parent="2" name="student"/>
+    <table id="15" parent="2" name="student_list"/>
+    <table id="16" parent="2" name="teacher_list"/>
+    <routine id="17" parent="2" name="pro_test">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="18" parent="2" name="pro_testByData">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="19" parent="2" name="pro_testByIf">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="20" parent="2" name="pro_testByIn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="21" parent="2" name="pro_testByStu">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="22" parent="2" name="pro_testByStu2">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="23" parent="2" name="pro_testByWhile">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="24" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="7" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="26" parent="7" name="balance">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="27" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="29" parent="8" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="30" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="9" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="32" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="10" name="content">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="35" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="38" parent="11" name="deptId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="39" parent="11" name="employee_dept_fk">
+      <ColNames>deptId</ColNames>
+    </index>
+    <key id="40" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="41" parent="11" name="employee_dept_fk">
+      <ColNames>deptId</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>dept</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="42" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="44" parent="12" name="size">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="45" parent="12" name="type">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="46" parent="12" name="addtime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="47" parent="12" name="file_path">
+      <Position>6</Position>
+      <DataType>varchar(150)|0</DataType>
+    </column>
+    <column id="48" parent="12" name="info">
+      <Position>7</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="49" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="13" name="title">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="51" parent="13" name="contents">
+      <Position>2</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="52" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="54" parent="14" name="age">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="55" parent="14" name="gender">
+      <Position>4</Position>
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <key id="56" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="15" name="tname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="59" parent="15" name="tage">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="60" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="62" parent="16" name="tname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="63" parent="16" name="tage">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="64" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <argument id="65" parent="18" name="eid">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="66" parent="18" name="sname">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="67" parent="19" name="num">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="68" parent="19" name="str">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="69" parent="20" name="eid">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="70" parent="21" name="sid">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="71" parent="22" name="sid">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="72" parent="22" name="sname">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="73" parent="23" name="num">
+      <DataType>int(11)|0</DataType>
+    </argument>
+    <argument id="74" parent="23" name="score">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>int(11)|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

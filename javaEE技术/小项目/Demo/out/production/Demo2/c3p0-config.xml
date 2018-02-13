@@ -1,0 +1,21 @@
+<c3p0-config>
+    <default-config>
+        <property name="jdbcUrl">jdbc:mysql://47.96.27.61:3306/test</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="user">lw</property>
+        <property name="password">linwei</property>
+        <property name="initialPoolSize">3</property>
+        <property name="maxPoolSize">6</property>
+        <property name="maxIdeleTime">1000</property>
+    </default-config>
+    <oracle-config>
+        <property name="jdbcUrl">jdbc:oracle:thin:47.96.27.61:3306:test", name, pass</property>
+        <property name="driverClass">com.oracle.jdbc.Driver</property>
+        <property name="user">lw</property>
+        <property name="password">linwei</property>
+        <property name="initialPoolSize">3</property>
+        <property name="maxPoolSize">6</property>
+        <property name="maxIdeleTime">1000</property>
+    </oracle-config>
+
+</c3p0-config>
