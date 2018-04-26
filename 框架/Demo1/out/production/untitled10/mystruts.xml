@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<struts>
+    <package>
+        <!--  method不配置默认为execute -->
+        <action name="login" class="lw.pers.web.LoginAction" method="login">
+            <!--  redirect: 代表重定向
+                  dispacher: 代表转发（默认不写type就是这个值）
+             -->
+            <result name="success" type="redirect">/index.jsp</result>
+            <result name="input">/error.jsp</result>
+        </action>
+
+        <action name="register" class="lw.pers.web.RegisterAction">
+            <result name="success" type="redirect">/login.jsp</result>
+        </action>
+
+    </package>
+</struts>
