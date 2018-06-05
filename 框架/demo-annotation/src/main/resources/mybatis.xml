@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--为实体类指定别名-->
+    <typeAliases>
+        <package name="lw.pers.beans"></package>
+    </typeAliases>
+    <!--配置映射文件-->
+    <mappers>
+        <package name="lw.pers.dao"></package>
+    </mappers>
+</configuration>

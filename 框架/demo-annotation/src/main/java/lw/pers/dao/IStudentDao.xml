@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="lw.pers.dao.IStudentDao">
+    <!--paramterType可以省略-->
+    <!--<insert id="insertStudent" parameterType="lw.pers.beans.Student">-->
+    <insert id="insertStudent">
+        INSERT INTO student(name,age) VALUES (#{name},#{age})
+    </insert>
+</mapper>
+
